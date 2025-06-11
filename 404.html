@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.23" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>LGBIT 文档</title><meta name="description" content="基于MicroPython语言与图形化编程的教育平台">
+    <link rel="preload" href="/vp-docs/assets/style-BrctYK5S.css" as="style"><link rel="stylesheet" href="/vp-docs/assets/style-BrctYK5S.css">
+    <link rel="modulepreload" href="/vp-docs/assets/app-DQshxW2H.js"><link rel="modulepreload" href="/vp-docs/assets/404.html-DDJekFsc.js">
+    <link rel="prefetch" href="/vp-docs/assets/index.html-Bbl6SIXj.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mp_extern_actuators.html-FZR26lgH.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mp_extern_disp.html-D-ytAKfB.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mp_extern_sensor.html-D80EhZba.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mp_pin.html-Cx9EaJ8A.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mpbit_board_system.html-DGlPYuDK.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mpbit_board_wifi.html-DFehUa6w.js" as="script"><link rel="prefetch" href="/vp-docs/assets/mpbit_educore.html-DZqa7sWH.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l3_1.html-DN1UxeyZ.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l3_2.html-QpsGTSiP.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l4_1.html-Dfwq9WAY.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l4_2.html-8h7URLfj.js" as="script"><link rel="prefetch" href="/vp-docs/assets/index.html-BgUkTaV1.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l3_1.html-i5kJanhO.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u1_l3_2.html-2RSMPVcO.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u2_l10_1.html-CUGpKTZU.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u2_l7_1.html-C90Lsi1j.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u2_l8_1.html-DEXaym8d.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u2_l9_1.html-D6fKpEjb.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l12_1.html--1j8T6KS.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l12_2.html-BxNcO2gx.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l13_1.html-DIkl77oH.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l13_2.html-CiRuLXJE.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l14_1.html-BFHjAIH2.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u3_l14_2.html-DmeApxM5.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u4_l17_1.html-Wz5bOU1U.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u4_l17_2.html-ChjrnzN9.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u4_l20_1.html-CA-dWkx0.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u4_l20_2.html-DKBoshGj.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u4_l20_3.html-xtq6dpAg.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l21_1.html-D6goLT5V.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l22_1.html-CJ1nyhJo.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l22_2.html-lXLS0DoG.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l23_1.html-gglWhyr5.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l23_2.html-Bf0Pil3M.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l24_1.html-lTmY3CZb.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u5_l25_1.html-QQlLZFx9.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u6_l26_1.html-BHFhJMjq.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u6_l30_1.html-DiQXOEuR.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u6_l30_2.html-ir2CdHkA.js" as="script"><link rel="prefetch" href="/vp-docs/assets/u6_l30_3.html-DEBPrFVL.js" as="script"><link rel="prefetch" href="/vp-docs/assets/index.html-B0IRxsSr.js" as="script"><link rel="prefetch" href="/vp-docs/assets/digital_vibration_sensor.html-VEI11MBL.js" as="script"><link rel="prefetch" href="/vp-docs/assets/light_sensor.html-B4AuUGBU.js" as="script"><link rel="prefetch" href="/vp-docs/assets/sensor.html-CMQ1LUYk.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-33d3430e><main class="page" data-v-33d3430e><div vp-content data-v-33d3430e><h1 data-v-33d3430e>404</h1><blockquote data-v-33d3430e>There&#39;s nothing here.</blockquote><a class="route-link" href="/vp-docs/" data-v-33d3430e>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/vp-docs/assets/app-DQshxW2H.js" defer></script>
+  </body>
+</html>
