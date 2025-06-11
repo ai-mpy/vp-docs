@@ -184,63 +184,6 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "传感器索引",
-    "headers": [],
-    "path": "/sensor/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "数字震动传感器",
-    "headers": [],
-    "path": "/sensor/digital_vibration_sensor.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "光线传感器",
-    "headers": [],
-    "path": "/sensor/light_sensor.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "传感器厂商",
-    "headers": [
-      {
-        "level": 2,
-        "title": "易创",
-        "slug": "易创",
-        "link": "#易创",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "DFRobot",
-        "slug": "dfrobot",
-        "link": "#dfrobot",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "幻尔",
-        "slug": "幻尔",
-        "link": "#幻尔",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "其他",
-        "slug": "其他",
-        "link": "#其他",
-        "children": []
-      }
-    ],
-    "path": "/sensor/sensor.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "信息科技八年级-第一单元-第3课-学习活动3",
     "headers": [],
     "path": "/educore_py/u1_l3_1.html",
@@ -433,6 +376,63 @@ export const SEARCH_INDEX = [
     "title": "信息科技八年级-第六单元-第30课-系统安全需升级",
     "headers": [],
     "path": "/educore_py/u6_l30_3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "传感器索引",
+    "headers": [],
+    "path": "/sensor/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "数字震动传感器",
+    "headers": [],
+    "path": "/sensor/digital_vibration_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "光线传感器",
+    "headers": [],
+    "path": "/sensor/light_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "传感器厂商",
+    "headers": [
+      {
+        "level": 2,
+        "title": "易创",
+        "slug": "易创",
+        "link": "#易创",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "DFRobot",
+        "slug": "dfrobot",
+        "link": "#dfrobot",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "幻尔",
+        "slug": "幻尔",
+        "link": "#幻尔",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "其他",
+        "slug": "其他",
+        "link": "#其他",
+        "children": []
+      }
+    ],
+    "path": "/sensor/sensor.html",
     "pathLocale": "/",
     "extraFields": []
   },
