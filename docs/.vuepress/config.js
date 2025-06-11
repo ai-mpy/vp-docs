@@ -2,12 +2,15 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   title: 'LGBIT 文档',
   description: '基于MicroPython语言与图形化编程的教育平台',
   base: '/vp-docs/',  // 已经正确设置为仓库名称
   bundler: viteBundler(),
+  // 客户端增强文件路径
+  clientConfigFile: path.resolve(__dirname, './client.js'),
   theme: defaultTheme({
     // 配置顶部导航栏
     navbar: [
@@ -29,21 +32,32 @@ export default defineUserConfig({
           },
         ],
       },
+      {
+        text: '图形化编程',
+        link: '/blockly/',
+      },
     ],
     // 手动配置侧边栏
     sidebar: {
       '/': [
         {
           text: '图形化编程',
-          collapsible: false,
+          collapsible: true,
           children: [
-            '/sensor/mp_pin.md',
+            {
+              text: '输入/输出',
+              link: '/blockly/mp_pin.md',
+            },
+            {
+              text: '板载输入',
+              link: '/blockly/mpbit_board_system.md',
+            },
             // 添加其他相关文档
           ],
         },
         {
           text: '传感器',
-          collapsible: false,
+          collapsible: true,
           children: [
             '/sensor/light_sensor.md',
             '/sensor/digital_vibration_sensor.md'
@@ -57,7 +71,7 @@ export default defineUserConfig({
     sidebarDepth: 2,
     displayAllHeaders: true,
     activeHeaderLinks: true,
-    sidebarCollapse: false,
+    sidebarCollapse: true, // 允许侧边栏折叠
     // 最后更新时间
     lastUpdated: false,
     // 贡献者
