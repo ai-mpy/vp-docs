@@ -4,10 +4,8 @@ import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 
 export default defineUserConfig({
-  title: 'MicroPython文档',
-  description: '简单易用的MicroPython传感器指南',
-  // 设置站点基础路径，如果你想部署到 https://<USERNAME>.github.io/，则可以省略这一步
-  // 如果你想部署到 https://<USERNAME>.github.io/<REPO>/，则将 base 设置为 "/<REPO>/"
+  title: 'LGBIT 文档',
+  description: '基于MicroPython语言与图形化编程的教育平台',
   base: '/vp-docs/',  // 已经正确设置为仓库名称
   bundler: viteBundler(),
   theme: defaultTheme({
@@ -36,6 +34,14 @@ export default defineUserConfig({
     sidebar: {
       '/': [
         {
+          text: '图形化编程',
+          collapsible: false,
+          children: [
+            '/sensor/mp_pin.md',
+            // 添加其他相关文档
+          ],
+        },
+        {
           text: '传感器',
           collapsible: false,
           children: [
@@ -53,11 +59,9 @@ export default defineUserConfig({
     activeHeaderLinks: true,
     sidebarCollapse: false,
     // 最后更新时间
-    lastUpdated: true,
-    lastUpdatedText: '最后更新',
+    lastUpdated: false,
     // 贡献者
-    contributors: true,
-    contributorsText: '贡献者',
+    contributors: false,
   }),
   plugins: [
     searchPlugin({
