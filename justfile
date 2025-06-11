@@ -13,4 +13,6 @@ deploy:
     git init
     git add -A
     git commit -m 'deploy'
-    git push -f https://github.com/ai-mpy/vp-docs.git main:gh-pages
+    git remote add origin https://github.com/ai-mpy/vp-docs.git
+    git push -f origin main:gh-pages
+    echo "Deployment completed successfully!"
