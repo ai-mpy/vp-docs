@@ -177,13 +177,6 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
-    "title": "快速上手",
-    "headers": [],
-    "path": "/guide/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "信息科技八年级-第一单元-第3课-学习活动3",
     "headers": [],
     "path": "/educore_py/u1_l3_1.html",
@@ -376,6 +369,13 @@ export const SEARCH_INDEX = [
     "title": "信息科技八年级-第六单元-第30课-系统安全需升级",
     "headers": [],
     "path": "/educore_py/u6_l30_3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "快速上手",
+    "headers": [],
+    "path": "/guide/",
     "pathLocale": "/",
     "extraFields": []
   },
