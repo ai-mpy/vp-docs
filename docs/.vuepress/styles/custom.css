@@ -1,9 +1,22 @@
-/* 调整 # 标题的字体大小 */
-h1 {
-  font-size: 1.5rem !important; /* 调整为更合适的大小 */
+/* 
+ * 此文件包含额外的自定义样式
+ * 确保与index.css文件协调一致
+ */
+
+/* 内容区块样式优化 */
+.theme-container {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-/* 添加对 Markdown 标题的样式 */
-.markdown-body h1 {
-  font-size: 1.5rem !important;
+/* 代码块样式优化 */
+pre, code {
+  font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+/* 图片居中显示 */
+.theme-default-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }

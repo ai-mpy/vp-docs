@@ -1,31 +1,92 @@
-/* 调整所有 # 标题的字体大小 */
+/**
+ * 自定义样式
+ * 调整所有标题的字体大小
+ */
+
+/* 基础标题大小调整 - 减小50%左右 */
 h1 {
-  font-size: 1rem !important; /* 进一步减小尺寸 */
+  font-size: 1.5rem !important;
+  margin-top: 1rem !important;
+}
+
+h2 {
+  font-size: 1.2rem !important;
+  margin-top: 0.8rem !important;
+}
+
+h3 {
+  font-size: 1.1rem !important;
+  margin-top: 0.6rem !important;
+}
+
+h4 {
+  font-size: 1rem !important;
+  margin-top: 0.5rem !important;
+}
+
+h5, h6 {
+  font-size: 0.9rem !important;
+  margin-top: 0.4rem !important;
 }
 
 /* 调整首页标题大小 */
 .home .hero h1 {
-  font-size: 1.2rem !important;
+  font-size: 1.8rem !important;
 }
 
 /* 调整导航栏标题大小 */
 .navbar .site-name {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
 }
 
 /* 调整 Markdown 内容中的标题 */
 .theme-default-content h1 {
+  font-size: 1.5rem !important;
+  border-bottom: 1px solid var(--c-border);
+  padding-bottom: 0.3rem;
+}
+
+.theme-default-content h2 {
+  font-size: 1.2rem !important;
+  border-bottom: 1px solid var(--c-border);
+  padding-bottom: 0.3rem;
+}
+
+.theme-default-content h3 {
+  font-size: 1.1rem !important;
+}
+
+.theme-default-content h4 {
   font-size: 1rem !important;
 }
 
-/* 确保其他页面的标题也被调整 */
-.page h1 {
-  font-size: 1rem !important;
+.theme-default-content h5, .theme-default-content h6 {
+  font-size: 0.9rem !important;
 }
 
 /* 调整移动设备上的标题大小 */
 @media (max-width: 719px) {
-  h1, .home .hero h1, .navbar .site-name, .theme-default-content h1, .page h1 {
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  
+  h2 {
+    font-size: 1.1rem !important;
+  }
+  
+  h3 {
+    font-size: 1rem !important;
+  }
+  
+  h4, h5, h6 {
     font-size: 0.9rem !important;
+  }
+  
+  .home .hero h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .navbar .site-name {
+    font-size: 1rem !important;
   }
 } 
