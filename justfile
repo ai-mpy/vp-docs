@@ -14,4 +14,3 @@ deploy:
     git add -A
     git commit -m 'deploy'
     git push -f https://github.com/ai-mpy/vp-docs.git main:gh-pages
-    cd - 
