@@ -1,0 +1,9 @@
+/* 调整 # 标题的字体大小 */
+h1 {
+  font-size: 1.5rem !important; /* 调整为更合适的大小 */
+}
+
+/* 添加对 Markdown 标题的样式 */
+.markdown-body h1 {
+  font-size: 1.5rem !important;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "vp-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "npm run docs:build && bash deploy.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.23",
+    "@vuepress/plugin-docsearch": "^2.0.0-rc.108",
+    "@vuepress/plugin-search": "next",
+    "@vuepress/theme-default": "2.0.0-rc.108",
+    "sass-embedded": "^1.89.2",
+    "vuepress": "2.0.0-rc.23"
+  }
+}

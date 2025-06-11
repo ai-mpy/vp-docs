@@ -1,0 +1,31 @@
+/* 调整所有 # 标题的字体大小 */
+h1 {
+  font-size: 1rem !important; /* 进一步减小尺寸 */
+}
+
+/* 调整首页标题大小 */
+.home .hero h1 {
+  font-size: 1.2rem !important;
+}
+
+/* 调整导航栏标题大小 */
+.navbar .site-name {
+  font-size: 1rem !important;
+}
+
+/* 调整 Markdown 内容中的标题 */
+.theme-default-content h1 {
+  font-size: 1rem !important;
+}
+
+/* 确保其他页面的标题也被调整 */
+.page h1 {
+  font-size: 1rem !important;
+}
+
+/* 调整移动设备上的标题大小 */
+@media (max-width: 719px) {
+  h1, .home .hero h1, .navbar .site-name, .theme-default-content h1, .page h1 {
+    font-size: 0.9rem !important;
+  }
+} 
