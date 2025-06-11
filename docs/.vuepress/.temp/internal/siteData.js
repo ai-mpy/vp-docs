@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/vp-docs/\",\"lang\":\"en-US\",\"title\":\"MicroPython文档\",\"description\":\"简单易用的MicroPython传感器指南\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/vp-docs/\",\"lang\":\"en-US\",\"title\":\"LGBIT 文档\",\"description\":\"基于MicroPython语言与图形化编程的教育平台\",\"head\":[],\"locales\":{\"/\":{\"lang\":\"zh-CN\",\"title\":\"LGBIT 文档\",\"description\":\"基于MicroPython语言与图形化编程的教育平台\"}}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

@@ -7,71 +7,110 @@ import { path } from '@vuepress/utils'
 export default defineUserConfig({
   title: 'LGBIT 文档',
   description: '基于MicroPython语言与图形化编程的教育平台',
-  base: '/vp-docs/',  // 已经正确设置为仓库名称
+  base: '/vp-docs/',
   bundler: viteBundler(),
+  // 设置默认语言为中文
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: 'LGBIT 文档',
+      description: '基于MicroPython语言与图形化编程的教育平台',
+    },
+  },
   // 客户端增强文件路径
   clientConfigFile: path.resolve(__dirname, './client.js'),
   theme: defaultTheme({
-    // 配置顶部导航栏
-    navbar: [
-      {
-        text: '首页',
-        link: '/',
-      },
-      {
-        text: '传感器',
-        link: '/sensor/',
-        children: [
+    // 主题语言配置
+    locales: {
+      '/': {
+        selectLanguageName: '简体中文',
+        selectLanguageText: '选择语言',
+        selectLanguageAriaLabel: '选择语言',
+        // 导航栏
+        navbar: [
           {
-            text: '光线传感器',
-            link: '/sensor/light_sensor.html',
+            text: '首页',
+            link: '/',
           },
           {
-            text: '数字震动传感器',
-            link: '/sensor/digital_vibration_sensor.html',
-          },
+            text: '快速上手',
+            link: '/guide/',
+          }
         ],
-      },
-      {
-        text: '图形化编程',
-        link: '/blockly/',
-      },
-    ],
-    // 手动配置侧边栏
-    sidebar: {
-      '/': [
-        {
-          text: '图形化编程',
-          collapsible: true,
-          children: [
+        // 侧边栏
+        sidebar: {
+          '/': [
             {
-              text: '输入/输出',
-              link: '/blockly/mp_pin.md',
+              text: '图形化编程',
+              collapsible: true,
+              children: [
+                {
+                  text: '输入/输出',
+                  link: '/blockly/mp_pin.md',
+                },
+                {
+                  text: '板载输入',
+                  link: '/blockly/mpbit_board_system.md',
+                },
+              ],
             },
             {
-              text: '板载输入',
-              link: '/blockly/mpbit_board_system.md',
+              text: '传感器',
+              collapsible: true,
+              children: [
+                '/sensor/light_sensor.md',
+                '/sensor/digital_vibration_sensor.md'
+              ],
             },
-            // 添加其他相关文档
+            {
+              text: '人教版图形化',
+              collapsible: true,
+              children: [
+                '/educore/u1_l3_1.md',
+                '/educore/u1_l3_2.md',
+                '/educore/u1_l4_1.md',
+                '/educore/u1_l4_2.md',
+              ],
+            },
+            {
+              text: '人教版MP',
+              collapsible: true,
+              children: [
+                '/educore_py/u1_l3_1.md',
+                '/educore_py/u1_l3_2.md',
+                '/educore_py/u2_l7_1.md',
+                '/educore_py/u2_l8_1.md',
+                '/educore_py/u2_l9_1.md',
+                '/educore_py/u2_l10_1.md',
+                '/educore_py/u3_l12_1.md',
+                '/educore_py/u3_l12_2.md',
+                '/educore_py/u3_l13_1.md',
+                '/educore_py/u3_l13_2.md',
+                '/educore_py/u3_l14_1.md',
+                '/educore_py/u3_l14_2.md',
+                '/educore_py/u4_l17_1.md',
+                '/educore_py/u4_l17_2.md',
+                '/educore_py/u4_l20_1.md',
+                '/educore_py/u4_l20_2.md',
+                '/educore_py/u4_l20_3.md',
+                '/educore_py/u5_l21_1.md',
+                '/educore_py/u5_l22_1.md',
+                '/educore_py/u5_l22_2.md',
+                '/educore_py/u5_l23_1.md',
+                '/educore_py/u5_l23_2.md',
+                '/educore_py/u5_l24_1.md',
+                '/educore_py/u5_l25_1.md',
+                '/educore_py/u6_l26_1.md',
+                '/educore_py/u6_l30_1.md',
+                '/educore_py/u6_l30_2.md',
+                '/educore_py/u6_l30_3.md',
+              ],
+            },
           ],
         },
-        {
-          text: '传感器',
-          collapsible: true,
-          children: [
-            '/sensor/light_sensor.md',
-            '/sensor/digital_vibration_sensor.md'
-            // 添加其他相关文档
-          ],
-        },
-        // 添加其他分类
-      ],
+        sidebarDepth: 2,
+      },
     },
-    // 可选：控制展开层级
-    sidebarDepth: 2,
-    displayAllHeaders: true,
-    activeHeaderLinks: true,
-    sidebarCollapse: true, // 允许侧边栏折叠
     // 最后更新时间
     lastUpdated: false,
     // 贡献者

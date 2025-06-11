@@ -10,6 +10,7 @@ import * as clientConfig8 from '/Users/liming/Documents/work/micro_python/vp-doc
 import * as clientConfig9 from '/Users/liming/Documents/work/micro_python/vp-docs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig10 from '/Users/liming/Documents/work/micro_python/vp-docs/node_modules/@vuepress/theme-default/lib/client/config.js'
 import * as clientConfig11 from '/Users/liming/Documents/work/micro_python/vp-docs/node_modules/@vuepress/plugin-search/lib/client/config.js'
+import * as clientConfig12 from '/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/client.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -24,4 +25,5 @@ export const clientConfigs = [
   clientConfig9,
   clientConfig10,
   clientConfig11,
+  clientConfig12,
 ].map((m) => m.default).filter(Boolean)

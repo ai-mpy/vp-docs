@@ -1,0 +1,23 @@
+<template><div><h1 id="信息科技八年级-第四单元-第17课-物联数据需采集" tabindex="-1"><a class="header-anchor" href="#信息科技八年级-第四单元-第17课-物联数据需采集"><span>信息科技八年级-第四单元-第17课-物联数据需采集</span></a></h1>
+<p>PYTHON代码:</p>
+<div class="language-python line-numbers-mode" data-highlighter="prismjs" data-ext="py"><pre v-pre><code class="language-python"><span class="line"><span class="token keyword">from</span> educore <span class="token keyword">import</span> oled<span class="token punctuation">,</span> wifi</span>
+<span class="line"></span>
+<span class="line">wifi<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>ssid<span class="token operator">=</span><span class="token string">'mywifi'</span><span class="token punctuation">,</span> psd<span class="token operator">=</span><span class="token string">'123456789'</span><span class="token punctuation">,</span> timeout<span class="token operator">=</span><span class="token number">10000</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">import</span> urequests</span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">import</span> ujson</span>
+<span class="line">city_code <span class="token operator">=</span> <span class="token string">'CH010100'</span></span>
+<span class="line">key <span class="token operator">=</span> <span class="token string">'5g8koi0s83vk0ihn'</span></span>
+<span class="line">_response <span class="token operator">=</span> urequests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'http://api.yytianqi.com/forecast7d?city='</span> <span class="token operator">+</span> city_code <span class="token operator">+</span> <span class="token string">'&amp;key='</span> <span class="token operator">+</span> key<span class="token punctuation">)</span></span>
+<span class="line"><span class="token keyword">if</span> _response<span class="token punctuation">.</span>status_code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">:</span></span>
+<span class="line">    data <span class="token operator">=</span> ujson<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>_response<span class="token punctuation">.</span>text<span class="token punctuation">)</span></span>
+<span class="line">    tq1 <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'list'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'tq1'</span><span class="token punctuation">]</span></span>
+<span class="line">    tq2 <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'data'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'list'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'tq2'</span><span class="token punctuation">]</span></span>
+<span class="line">    tq <span class="token operator">=</span> tq1 <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> tq2</span>
+<span class="line">    oled<span class="token punctuation">.</span><span class="token keyword">print</span><span class="token punctuation">(</span>tq<span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="./py/u4l17_学习活动1.py" download>点击下载-u4l17_学习活动1.py</a></p>
+</div></template>
+
+
