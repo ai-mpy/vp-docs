@@ -3,11 +3,17 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import { path } from '@vuepress/utils'
+// 引入 markdown-it-task-lists 插件
+import MarkdownItTaskLists from 'markdown-it-task-lists'
+// 引入 shiki 插件
+import Shiki from '@shikijs/markdown-it'
+import MarkdownIt from 'markdown-it'
 
 export default defineUserConfig({
   title: 'LGBIT 文档',
   description: '基于MicroPython语言与图形化编程的教育平台',
-  base: '/vp-docs/',
+  // 修改 base 配置项
+  base: '/vp-docs/', // 设置为与GitHub仓库名匹配的路径，适用于GitHub Pages
   bundler: viteBundler(),
   // 设置默认语言为中文
   locales: {
@@ -19,6 +25,24 @@ export default defineUserConfig({
   },
   // 客户端增强文件路径
   clientConfigFile: path.resolve(__dirname, './client.js'),
+  // 扩展 Markdown
+  async extendMarkdown(md) {
+    md.use(MarkdownItTaskLists)
+    
+    // 使用独立的 MarkdownIt 实例进行 Shiki 配置
+    const customMd = MarkdownIt()
+    
+    customMd.use(await Shiki({
+      themes: {
+        light: 'vitesse-light',
+        dark: 'vitesse-dark',
+      }
+    }))
+    
+    // 复制配置到主 md 实例
+    md.options = { ...md.options, ...customMd.options }
+    md.renderer.rules = { ...md.renderer.rules, ...customMd.renderer.rules }
+  },
   theme: defaultTheme({
     // 主题语言配置
     locales: {
@@ -59,7 +83,20 @@ export default defineUserConfig({
               collapsible: true,
               children: [
                 '/sensor/light_sensor.md',
-                '/sensor/digital_vibration_sensor.md'
+                '/sensor/flame_sensor.md',
+                '/sensor/steam_sensor.md',
+                '/sensor/digital_vibration_sensor.md',
+                '/sensor/gas_sensor.md',
+                '/sensor/rotation_sensor.md',
+                '/sensor/hcsr04.md',
+                '/sensor/dht11_sensor.md'
+              ],
+            },
+            {
+              text: '执行器',
+              collapsible: true,
+              children: [
+                '/actuator/servo.md',
               ],
             },
             {
@@ -67,7 +104,6 @@ export default defineUserConfig({
               collapsible: true,
               children: [
                 '/educore/u1_l3_1.md',
-                '/educore/u1_l3_2.md',
                 '/educore/u1_l4_1.md',
                 '/educore/u1_l4_2.md',
               ],
@@ -129,5 +165,12 @@ export default defineUserConfig({
       getExtraFields: (page) => page.frontmatter.tags ?? [], // 允许搜索frontmatter中的tags字段
       isSearchable: (page) => page.path !== '/', // 排除首页
     }),
+    // 添加 markdown-it-task-lists 插件
+    {
+      name: 'markdown-it-task-lists',
+      extendsMarkdown: (md) => {
+        md.use(MarkdownItTaskLists)
+      }
+    }
   ],
 })

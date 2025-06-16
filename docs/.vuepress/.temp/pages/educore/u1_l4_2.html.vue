@@ -1,5 +1,4 @@
 <template><div><h1 id="信息科技八年级-第一单元-第4课-物物相连有价值" tabindex="-1"><a class="header-anchor" href="#信息科技八年级-第一单元-第4课-物物相连有价值"><span>信息科技八年级-第一单元-第4课-物物相连有价值</span></a></h1>
-<br>
 <img src="@source/educore/img/u1_l4_2.png" alt="u1_l4_2" style="width:700px;">
 <p>生成代码:</p>
 <div class="language-python line-numbers-mode" data-highlighter="prismjs" data-ext="py"><pre v-pre><code class="language-python"><span class="line"><span class="token keyword">from</span> educore <span class="token keyword">import</span> light<span class="token punctuation">,</span>rgb<span class="token punctuation">,</span>sound</span>

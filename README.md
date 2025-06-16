@@ -19,16 +19,10 @@ npm run docs:dev
 ## 构建部署
 
 ```bash
-# 构建静态文件
-npm run docs:build
-
+# 调试
+just dev
+# 构建
+just build
 # 部署到GitHub Pages
-npm run docs:deploy
+just deploy
 ```
-
-## 文档结构
-
-- `/docs/`: 所有文档文件
-  - `/docs/sensor/`: 传感器相关文档
-    - `light_sensor.md`: 光线传感器文档
-    - `digital_vibration_sensor.md`: 数字震动传感器文档

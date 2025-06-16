@@ -10,10 +10,10 @@ author: bright
 以下是一些常见的传感器厂商：
 
 ## 易创
-https://emakefun.github.io/
+[https://emakefun.github.io/](https://emakefun.github.io/)
 
 ## DFRobot
-数字继电器模块 SKU:DFR0017
+[DFRobot](https://wiki.dfrobot.com.cn/)
 
 ## 幻尔
 

@@ -2,6 +2,7 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":""} }],
+  ["/actuator/servo.html", { loader: () => import(/* webpackChunkName: "actuator_servo.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/actuator/servo.html.js"), meta: {"title":"SG90 舵机"} }],
   ["/blockly/mp_extern_actuators.html", { loader: () => import(/* webpackChunkName: "blockly_mp_extern_actuators.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/blockly/mp_extern_actuators.html.js"), meta: {"title":"外接执行"} }],
   ["/blockly/mp_extern_disp.html", { loader: () => import(/* webpackChunkName: "blockly_mp_extern_disp.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/blockly/mp_extern_disp.html.js"), meta: {"title":"外接显示"} }],
   ["/blockly/mp_extern_sensor.html", { loader: () => import(/* webpackChunkName: "blockly_mp_extern_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/blockly/mp_extern_sensor.html.js"), meta: {"title":"外接传感"} }],
@@ -13,7 +14,9 @@ export const routes = Object.fromEntries([
   ["/educore/u1_l3_2.html", { loader: () => import(/* webpackChunkName: "educore_u1_l3_2.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore/u1_l3_2.html.js"), meta: {"title":"信息科技八年级-第一单元-第3课-拓展与提升"} }],
   ["/educore/u1_l4_1.html", { loader: () => import(/* webpackChunkName: "educore_u1_l4_1.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore/u1_l4_1.html.js"), meta: {"title":"信息科技八年级-第一单元-第4课-物物相连有价值"} }],
   ["/educore/u1_l4_2.html", { loader: () => import(/* webpackChunkName: "educore_u1_l4_2.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore/u1_l4_2.html.js"), meta: {"title":"信息科技八年级-第一单元-第4课-物物相连有价值"} }],
+  ["/examples/ps2_ctrl.html", { loader: () => import(/* webpackChunkName: "examples_ps2_ctrl.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/examples/ps2_ctrl.html.js"), meta: {"title":"PS2手柄"} }],
   ["/guide/", { loader: () => import(/* webpackChunkName: "guide_index.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/guide/index.html.js"), meta: {"title":"快速上手"} }],
+  ["/guide/pins.html", { loader: () => import(/* webpackChunkName: "guide_pins.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/guide/pins.html.js"), meta: {"title":"MATRIX:BIT IOBIT 引脚说明"} }],
   ["/educore_py/u1_l3_1.html", { loader: () => import(/* webpackChunkName: "educore_py_u1_l3_1.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u1_l3_1.html.js"), meta: {"title":"信息科技八年级-第一单元-第3课-学习活动3"} }],
   ["/educore_py/u1_l3_2.html", { loader: () => import(/* webpackChunkName: "educore_py_u1_l3_2.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u1_l3_2.html.js"), meta: {"title":"信息科技八年级-第一单元-第3课-拓展与提升"} }],
   ["/educore_py/u2_l10_1.html", { loader: () => import(/* webpackChunkName: "educore_py_u2_l10_1.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u2_l10_1.html.js"), meta: {"title":"信息科技八年级-第二单元-第10课-物物互通有新径"} }],
@@ -42,9 +45,33 @@ export const routes = Object.fromEntries([
   ["/educore_py/u6_l30_1.html", { loader: () => import(/* webpackChunkName: "educore_py_u6_l30_1.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u6_l30_1.html.js"), meta: {"title":"信息科技八年级-第六单元-第30课-系统安全需升级"} }],
   ["/educore_py/u6_l30_2.html", { loader: () => import(/* webpackChunkName: "educore_py_u6_l30_2.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u6_l30_2.html.js"), meta: {"title":"信息科技八年级-第六单元-第30课-系统安全需升级"} }],
   ["/educore_py/u6_l30_3.html", { loader: () => import(/* webpackChunkName: "educore_py_u6_l30_3.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/educore_py/u6_l30_3.html.js"), meta: {"title":"信息科技八年级-第六单元-第30课-系统安全需升级"} }],
+  ["/micropython/", { loader: () => import(/* webpackChunkName: "micropython_index.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/micropython/index.html.js"), meta: {"title":""} }],
   ["/sensor/", { loader: () => import(/* webpackChunkName: "sensor_index.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/index.html.js"), meta: {"title":"传感器索引"} }],
+  ["/sensor/dht11_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_dht11_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/dht11_sensor.html.js"), meta: {"title":"DHT11数字温湿度传感器"} }],
   ["/sensor/digital_vibration_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_digital_vibration_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/digital_vibration_sensor.html.js"), meta: {"title":"数字震动传感器"} }],
+  ["/sensor/flame_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_flame_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/flame_sensor.html.js"), meta: {"title":"火焰传感器"} }],
+  ["/sensor/gas_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_gas_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/gas_sensor.html.js"), meta: {"title":"模拟烟雾报警器"} }],
+  ["/sensor/hcsr04.html", { loader: () => import(/* webpackChunkName: "sensor_hcsr04.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/hcsr04.html.js"), meta: {"title":"SR04超声波传感器"} }],
   ["/sensor/light_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_light_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/light_sensor.html.js"), meta: {"title":"光线传感器"} }],
+  ["/sensor/rotation_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_rotation_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/rotation_sensor.html.js"), meta: {"title":"300度模拟放置角度传感器"} }],
   ["/sensor/sensor.html", { loader: () => import(/* webpackChunkName: "sensor_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/sensor.html.js"), meta: {"title":"传感器厂商"} }],
+  ["/sensor/steam_sensor.html", { loader: () => import(/* webpackChunkName: "sensor_steam_sensor.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/sensor/steam_sensor.html.js"), meta: {"title":"水分传感器"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/liming/Documents/work/micro_python/vp-docs/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateRoutes) {
+    __VUE_HMR_RUNTIME__.updateRoutes(routes)
+  }
+  if (__VUE_HMR_RUNTIME__.updateRedirects) {
+    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ routes, redirects }) => {
+    __VUE_HMR_RUNTIME__.updateRoutes(routes)
+    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
+  })
+}

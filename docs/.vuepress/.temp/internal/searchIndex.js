@@ -1,5 +1,27 @@
 export const SEARCH_INDEX = [
   {
+    "title": "SG90 舵机",
+    "headers": [
+      {
+        "level": 2,
+        "title": "MicroPython 范例",
+        "slug": "micropython-范例",
+        "link": "#micropython-范例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Mixly LGBIT 范例",
+        "slug": "mixly-lgbit-范例",
+        "link": "#mixly-lgbit-范例",
+        "children": []
+      }
+    ],
+    "path": "/actuator/servo.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "外接执行",
     "headers": [],
     "path": "/blockly/mp_extern_actuators.html",
@@ -81,9 +103,9 @@ export const SEARCH_INDEX = [
       },
       {
         "level": 2,
-        "title": "当引脚电平模拟值改变时",
-        "slug": "当引脚电平模拟值改变时",
-        "link": "#当引脚电平模拟值改变时",
+        "title": "当引脚电平模拟值改变时(中断回调非阻塞)",
+        "slug": "当引脚电平模拟值改变时-中断回调非阻塞",
+        "link": "#当引脚电平模拟值改变时-中断回调非阻塞",
         "children": []
       }
     ],
@@ -127,6 +149,13 @@ export const SEARCH_INDEX = [
         "title": "返回(X/Y/Z)加速度值",
         "slug": "返回-x-y-z-加速度值",
         "link": "#返回-x-y-z-加速度值",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "返回X/Y/Z角速度值",
+        "slug": "返回x-y-z角速度值",
+        "link": "#返回x-y-z角速度值",
         "children": []
       }
     ],
@@ -177,9 +206,23 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "PS2手柄",
+    "headers": [],
+    "path": "/examples/ps2_ctrl.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "快速上手",
     "headers": [],
     "path": "/guide/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "MATRIX:BIT IOBIT 引脚说明",
+    "headers": [],
+    "path": "/guide/pins.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -380,9 +423,38 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "",
+    "headers": [],
+    "path": "/micropython/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "传感器索引",
     "headers": [],
     "path": "/sensor/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "DHT11数字温湿度传感器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "产品参数",
+        "slug": "产品参数",
+        "link": "#产品参数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "生成代码示例",
+        "slug": "生成代码示例",
+        "link": "#生成代码示例",
+        "children": []
+      }
+    ],
+    "path": "/sensor/dht11_sensor.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -394,9 +466,76 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "火焰传感器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "生成代码",
+        "slug": "生成代码",
+        "link": "#生成代码",
+        "children": []
+      }
+    ],
+    "path": "/sensor/flame_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "模拟烟雾报警器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "生成代码",
+        "slug": "生成代码",
+        "link": "#生成代码",
+        "children": []
+      }
+    ],
+    "path": "/sensor/gas_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "SR04超声波传感器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Mixly 图形化编程",
+        "slug": "mixly-图形化编程",
+        "link": "#mixly-图形化编程",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "生成代码",
+        "slug": "生成代码",
+        "link": "#生成代码",
+        "children": []
+      }
+    ],
+    "path": "/sensor/hcsr04.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "光线传感器",
-    "headers": [],
+    "headers": [
+      {
+        "level": 2,
+        "title": "生成代码示例",
+        "slug": "生成代码示例",
+        "link": "#生成代码示例",
+        "children": []
+      }
+    ],
     "path": "/sensor/light_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "300度模拟放置角度传感器",
+    "headers": [],
+    "path": "/sensor/rotation_sensor.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -437,6 +576,21 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "水分传感器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "生成代码示例",
+        "slug": "生成代码示例",
+        "link": "#生成代码示例",
+        "children": []
+      }
+    ],
+    "path": "/sensor/steam_sensor.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
@@ -444,3 +598,16 @@ export const SEARCH_INDEX = [
     "extraFields": []
   }
 ]
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ searchIndex }) => {
+    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
+  })
+}
